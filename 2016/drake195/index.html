@@ -7,24 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drake Univeristy CS 195: Intensive JTerm on Parallel and Distributed Systems</title>
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/bootstrap-theme.min.css"> 
-
-    <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/robotic.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
   </head>
 
   <body>
 
     <div id="header">
       <a href="http://drake.edu/">
-        <img src="Drake.jpg" alt="DRAKE" style="height:100px; float: left; margin-left: 20px;">
+        <img src="photos/drake.jpg" alt="DRAKE" style="height:100px; float: left; margin-left: 20px;">
       </a>
       <a href="http://stanford.edu/">
-        <img src="Stanford-Infolab-RGB-whiteBG-1200px@2X.png" alt="INFOLAB" style="height:100px; float: right; margin-right: 20px;">
+        <img src="photos/stanford-infolab-RGB-whiteBG-1200px@2X.png" alt="INFOLAB" style="height:100px; float: right; margin-right: 20px;">
       </a>
 
       <h1>Drake Univeristy CS 195: Intensive JTerm on Parallel and Distributed Systems</h1>
@@ -35,7 +30,7 @@
 
     <div id="teaser">
       <p style="text-align: center">
-        <img src="banner.jpg" alt="banner" style="width:90%; margin-left: 20px;">      
+        <img src="photos/banner.jpg" alt="banner" style="width:90%; margin-left: 20px;">      
       </p>
     </div>
 
@@ -60,11 +55,19 @@
         
         <div>
           <div>Textbooks:</div>
-          <div><a href="resources/cpp-concurrency-in-action.pdf">C++ Concurrency in Action: Practical Multithreading.</a> (required)</div>
-          <div><a href="resources/boost-asio-cpp-network-programming.pdf">Boost.Asio C++ Network Programming.</a> (required)</div>
+          <div><a href="https://www.google.com/search?q=C%2B%2B+Concurrency+in+Action%3A+Practical+Multithreading.&oq=C%2B%2B+Concurrency+in+Action%3A+Practical+Multithreading.&aqs=chrome..69i57.288j0j7&sourceid=chrome&ie=UTF-8#q=C%2B%2B+Concurrency+in+Action:+Practical+Multithreading+pdf">C++ Concurrency in Action: Practical Multithreading.</a> (required)</div>
+          <div><a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Boost.Asio+C%2B%2B+Network+Programming+pdf">Boost.Asio C++ Network Programming.</a> (required)</div>
           <div>UNIX Network Programming, Volume 1, Third Edition. (optional)</div>
           <br/>
         </div>
+
+        <div>
+          <div>Course Links:</div>
+          <div>Development server (linux via ssh): <a id="copy1">ssh.pnp.classes.johnemmons.com</a> <button type="button" class="btn btn-outline-primary btn-xs" onclick="copyToClipboard('copy1')">copy to clipboard</button></div>
+          <div>Git server: <a href="https://git.pnp.classes.johnemmons.com">git.pnp.classes.johnemmons.com</a></div>
+          <br/>
+        </div>
+
       </div>
 
       <div class="container sec">
@@ -75,7 +78,7 @@
               <h2>Instructor</h2>
               <div class="instructor">
                 <a href="http://johnemmons.com">
-                  <div class="instructorphoto"><img src="john_emmons_headshot.jpg"></div>
+                  <div class="instructorphoto"><img src="photos/john_emmons_headshot.jpg"></div>
                   <div>John Emmons</div>
                 </a>
               </div>
@@ -95,292 +98,315 @@
         Lab assignment: 50%<br>
       </td>
 
-</tr>
-</table>
-</div>
+      </table>
+    </div>
 
-<div class="sechighlight">
-  <div class="container sec">
-    <h2>Schedule and Syllabus</h2>
-  </div>
-</div>
+    <div class="sechighlight">
+      <div class="container sec">
+        <h2>Schedule and Syllabus</h2>
+      </div>
+    </div>
 
-<div class="container sec">
-  <table class="table">
-    <tr class="active">
-      <th>Event Type</th><th>Date</th><th>Description</th><th>Course Materials</th>
-    </tr>
-    <tr style="background-color:rgb(200,200,200)">
-      <td>Week 1</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 1</td>
+    <div class="container sec">
+      <table class="table">
+        <tr class="active">
+          <th>Event Type</th><th>Date</th><th>Description</th><th>Course Materials</th>
+        </tr>
+        <tr style="background-color:rgb(200,200,200)">
+          <td>Week 1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 1</td>
 
-      <td>
-        <ul>
-          <li>Motivation for the course</li>
-          <li>Intro to command line and linux (bash + makefiles + editors + ssh)</li>
-          <li>C/C++ review (classes, templates, lambdas, shared_ptrs, etc.)</li>
-          <li>Wrapper fascade pattern</li>
-          <li>Intro to shared memory if time permits (std::thread)</li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li>Motivation for the course</li>
+              <li>Intro to command line and linux (bash + makefiles + editors + ssh)</li>
+              <li>C/C++ review (classes, templates, lambdas, shared_ptrs, etc.)</li>
+              <li>Wrapper fascade pattern</li>
+              <li>Intro to shared memory if time permits (std::thread)</li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>                    
-    </tr>
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 2</td>
+          <td>
+            <a href="">slides</a>
+          </td>                    
+        </tr>
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 2</td>
 
-      <td>
-        <ul>
-          <li> More investigation of std::thread and shared memory </li>
-          <li> Choosing the number of threads (std::thread::hardware_concurrency) </li>
-          <li> Synchronization mechanisms (std::mutex) </li>
-          <li> Discussion of deadlocks and race conditions and how to prevent them </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> More investigation of std::thread and shared memory </li>
+              <li> Choosing the number of threads (std::thread::hardware_concurrency) </li>
+              <li> Synchronization mechanisms (std::mutex) </li>
+              <li> Discussion of deadlocks and race conditions and how to prevent them </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>          
-    </tr>
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 3</td>
+          <td>
+            <a href="">slides</a>
+          </td>          
+        </tr>
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 3</td>
 
-      <td>
-        <ul>
-          <li> Managing concurrency </li>
-          <li> RAII pattern and scope based locking (join guard and lock guard) </li>
-          <li> Monitor object pattern (thread-safe linked list and queue) </li>
-          <li> Active object pattern </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> Managing concurrency </li>
+              <li> RAII pattern and scope based locking (join guard and lock guard) </li>
+              <li> Monitor object pattern (thread-safe linked list and queue) </li>
+              <li> Active object pattern </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 4</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 4</td>
 
-      <td>
-        <ul>
-          <li> Event driven v. synchronous programming (lead up to network programming)  </li>
-          <li> Condition variables and notify </li>
-          <li> Asynchronous completion token (ACT) </li>
-          <li> Futures, packaged_task, promise </li>
-          <li> Half-sync half-async </li>
-          <li> Leader follower </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> Event driven v. synchronous programming (lead up to network programming)  </li>
+              <li> Condition variables and notify </li>
+              <li> Asynchronous completion token (ACT) </li>
+              <li> Futures, packaged_task, promise </li>
+              <li> Half-sync half-async </li>
+              <li> Leader follower </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Lecture/Exam Review</td>
-      <td>Jan 5</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture/Exam Review</td>
+          <td>Jan 5</td>
 
-      <td>
-        <ul>
-          <li> Advanced topics in threads </li>
-          <li> Brief discussion of memory consistency and basic computer architecture </li>
-          <li> Atomic variables (std::atomic) & lock free data structures </li>
-          <li> Thread pools </li>
-          <li> Exam review </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> Advanced topics in threads </li>
+              <li> Brief discussion of memory consistency and basic computer architecture </li>
+              <li> Atomic variables (std::atomic) & lock free data structures </li>
+              <li> Thread pools </li>
+              <li> Exam review </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr style="background-color:rgb(200,200,200)">
-      <td>Week 2</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="info">
-      <td>Exam 1</td>
-      <td>Jan 6</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr style="background-color:rgb(200,200,200)">
+          <td>Week 2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="info">
+          <td>Exam 1</td>
+          <td>Jan 6</td>
 
-      <td>
-        <p>In class exam (1 hour)</p>
-        Lecture in remaining time
-        <ul>
-          <li> Intro to network programming and distributed computing </li>
-          <li> Basic synchronous network programming </li>
-          <li> TCP synchronous echo server </li>
-        </ul>
-      </td>
+          <td>
+            <p>In class exam (1 hour)</p>
+            Lecture in remaining time
+            <ul>
+              <li> Intro to network programming and distributed computing </li>
+              <li> Basic synchronous network programming </li>
+              <li> TCP synchronous echo server </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">exam</a><br />
-        <a href="">exam solutions</a><br />
-        <a href="">slides</a><br />
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 7</td>
+          <td>
+            <a href="">exam</a><br />
+            <a href="">exam solutions</a><br />
+            <a href="">slides</a><br />
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 7</td>
 
-      <td>
-        <p>Go over graded exams</p>
-        Lecture in remaining time
-        <ul>
-          <li>What are sockets and how do they work at a high level? </li>
-          <li>OSI 7-layers of abstraction </li>
-          <li>TCP v. UDP (when to use one or the other) </li>
-          <li>More on basic network programming </li>
-          <li>TCP chat server </li>
-        </ul>
-      </td>
+          <td>
+            <p>Go over graded exams</p>
+            Lecture in remaining time
+            <ul>
+              <li>What are sockets and how do they work at a high level? </li>
+              <li>OSI 7-layers of abstraction </li>
+              <li>TCP v. UDP (when to use one or the other) </li>
+              <li>More on basic network programming </li>
+              <li>TCP chat server </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 8</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 8</td>
 
-      <td>
-        <ul>
-          <li> Serializing and deserializing data in network programming </li>
-          <li> Proactor and reactor patterns </li>
-          <li> The link to event driven multithreaded programming </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> Serializing and deserializing data in network programming </li>
+              <li> Proactor and reactor patterns </li>
+              <li> The link to event driven multithreaded programming </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Lecture</td>
-      <td>Jan 9</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture</td>
+          <td>Jan 9</td>
 
-      <td>
-        <ul>
-          <li> Combining paradigms from distributed and multithreaded programming </li>
-          <li> Webserver design and HTTP protocol </li>
-          <li> Common gateway interface (CGI) </li>
-          <li> Tiny bit of C programming and fork + exec </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> Combining paradigms from distributed and multithreaded programming </li>
+              <li> Webserver design and HTTP protocol </li>
+              <li> Common gateway interface (CGI) </li>
+              <li> Tiny bit of C programming and fork + exec </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Lecture/Exam Review</td>
-      <td>Jan 10</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Lecture/Exam Review</td>
+          <td>Jan 10</td>
 
-      <td>
-        <ul>
-          <li> Higher level abstractions (MPI, openMP, Cilk & Clik++, OpenACC) </li>
-          <li> Exotic computer architecture (GPUs, Xeon Phi, FGPAs) </li>
-          <li> Review for exam </li>
-        </ul>
-      </td>
+          <td>
+            <ul>
+              <li> Higher level abstractions (MPI, openMP, Cilk & Clik++, OpenACC) </li>
+              <li> Exotic computer architecture (GPUs, Xeon Phi, FGPAs) </li>
+              <li> Review for exam </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">slides</a>
-      </td>
-    </tr>
-    <tr style="background-color:rgb(200,200,200)">
-      <td>Week 3</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="info">
-      <td>Exam 2</td>
-      <td>Jan 11</td>
+          <td>
+            <a href="">slides</a>
+          </td>
+        </tr>
+        <tr style="background-color:rgb(200,200,200)">
+          <td>Week 3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="info">
+          <td>Exam 2</td>
+          <td>Jan 11</td>
 
-      <td>
-        <p> In class exam (1.5 hours) </p>
-        Discussion of final project
-        <ul>
-          <li> Project outline and rubric </li>
-          <li> More indepth lecture on HTTP protocol </li>
-        </ul>
-      </td>
+          <td>
+            <p> In class exam (1.5 hours) </p>
+            Discussion of final project
+            <ul>
+              <li> Project outline and rubric </li>
+              <li> More indepth lecture on HTTP protocol </li>
+            </ul>
+          </td>
 
-      <td>
-        <a href="">exam</a><br />
-        <a href="">exam solutions</a><br />
-        <a href="">lab assignment</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Work day</td>
-      <td>Jan 12</td>
+          <td>
+            <a href="">exam</a><br />
+            <a href="">exam solutions</a><br />
+            <a href="">lab assignment</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Work day</td>
+          <td>Jan 12</td>
 
-      <td>
-        <p>Go over graded exams</p>        
-        <p>In class work time</p>        
-      </td>
+          <td>
+            <p>Go over graded exams</p>        
+            <p>In class work time</p>        
+          </td>
 
-      <td>
-        <a href="">supp. materials</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Work day</td>
-      <td>Jan 13</td>
+          <td>
+            <a href="">supp. materials</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Work day</td>
+          <td>Jan 13</td>
 
-      <td>
-        <p>In class work time</p>
-      </td>
+          <td>
+            <p>In class work time</p>
+          </td>
 
-      <td>
-        <a href="">supp. material</a>
-      </td>
-    </tr>
-    <tr>  
-      <td>Work day</td>
-      <td>Jan 14</td>
+          <td>
+            <a href="">supp. material</a>
+          </td>
+        </tr>
+        <tr>  
+          <td>Work day</td>
+          <td>Jan 14</td>
 
-      <td>
-        <p>In class work time</p>        
-      </td>
+          <td>
+            <p>In class work time</p>        
+          </td>
 
-      <td>
-        <a href="">supp. materials</a>
-      </td>
-    </tr>
-    <tr class="danger">
-      <td>Final Project Demos</td>
-      <td>Jan 15</td>
+          <td>
+            <a href="">supp. materials</a>
+          </td>
+        </tr>
+        <tr class="danger">
+          <td>Final Project Demos</td>
+          <td>Jan 15</td>
 
-      <td>
-        Demo lab assignment and final grades assigned
-      </td>
+          <td>
+            Demo lab assignment and final grades assigned
+          </td>
 
-      <td>
-        <a href="">class photo</a>
-      </td>
-    </tr>
-  </table>
-</div>
+          <td>
+            <a href="">class photo</a>
+          </td>
+        </tr>
+      </table>
+    </div>
 
-<!-- jQuery and Boostrap -->
-<script src="static/js/jquery.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      function copyToClipboard(elementId) {
+
+      // Create a "hidden" input
+      var aux = document.createElement("input");
+
+      // Assign it the value of the specified element
+      aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+      // Append it to the body
+      document.body.appendChild(aux);
+
+      // Highlight its content
+      aux.select();
+
+      // Copy the highlighted text
+      document.execCommand("copy");
+
+      // Remove it from the body
+      document.body.removeChild(aux);
+
+      }
+    </script>
+
+    <!-- jQuery and Boostrap -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+  </body>
 
 </html>
