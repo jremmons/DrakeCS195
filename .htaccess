@@ -1,2 +1,1 @@
-RewriteEngine On
-ErrorDocument 404 /2018/drake195
+ErrorDocument 404 http://classes.johnemmons.com/2018/drake195
