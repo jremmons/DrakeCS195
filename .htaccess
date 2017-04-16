@@ -1,1 +1,1 @@
-ErrorDocument 404 http://classes.johnemmons.com/2018/drake195
+Redirect /index.html http://classes.johnemmons.com/2018/drake195/index.html
